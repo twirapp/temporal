@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 export DB=postgresql
 export DB_PORT=5432
@@ -8,4 +8,4 @@ export POSTGRES_DB=temporal
 export POSTGRES_PWD=$(egrep  -v '^#' /run/secrets/twir_postgres_password)
 export POSTGRES_USER=$(egrep  -v '^#' /run/secrets/twir_postgres_user)
 
-source /docker-entrypoint.sh
+source /etc/temporal/entrypoint.sh
