@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  postgres-backup:
+  temporal:
     runs-on: self-hosted
     steps:
       - uses: TooMuch4U/actions-clean@v2.1
