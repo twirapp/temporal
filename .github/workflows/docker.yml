@@ -15,8 +15,8 @@ jobs:
 
       - run: |
           docker build -f ./Dockerfile \
-          -t ${{ secrets.DOCKER_REGISTRY }}/twir/temporal:latest \
+          -t satont/twir-temporal:latest \
           --cache-from type=gha,scope=twir-temporal \
           --cache-to type=gha,mode=max,scope=twir-temporal .
 
-          docker push ${{ secrets.DOCKER_REGISTRY }}/twir/temporal:latest
+          docker push satont/twir-temporal:latest
