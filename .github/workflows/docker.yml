@@ -15,8 +15,8 @@ jobs:
 
       - run: |
           docker build -f ./Dockerfile \
-          -t satont/twir-temporal:latest \
+          -t twirapp/temporal:latest \
           --cache-from type=gha,scope=twir-temporal \
           --cache-to type=gha,mode=max,scope=twir-temporal .
 
-          docker push satont/twir-temporal:latest
+          docker push twirapp/temporal:latest
